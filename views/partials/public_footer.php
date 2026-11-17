@@ -124,7 +124,7 @@ $socialIcons = [
           <h4 class="rm-footer-title">Contacto</h4>
           <ul>
             <li>📞 <?php echo e(app_setting('contact_phone',   '(01) 000-0000')) ?></li>
-            <li>✉️ <?php echo e(app_setting('contact_email',   'contacto@amigosporelmundo.org')) ?></li>
+            <li>✉️ <?php echo e(app_setting('contact_email',   'contacto@amigosparaelmundo.org')) ?></li>
             <li>📍 <?php echo e(app_setting('contact_address', 'Piura, Perú')) ?></li>
             <li>🕘 <?php echo e(app_setting('contact_hours',   'Lun - Sáb · 08:00 - 20:00')) ?></li>
             <li><a href="<?php echo e(url('/pagina/contacto')) ?>">Escríbenos</a></li>

@@ -3,7 +3,7 @@
 Sitio institucional con panel administrador (CMS) para la **Asociación Civil Amigos por el Mundo**.
 Arquitectura **MVC propia en PHP puro**: sin framework, sin Composer obligatorio y sin build de Node.
 
-> Dominio de producción: **amigosporelmundo.org**
+> Dominio de producción: **amigosparaelmundo.org**
 
 ---
 
@@ -76,7 +76,7 @@ Base de datos local: **`amigos_mundo`** · host `127.0.0.1:3306` · usuario `roo
 1. **Clonar** el repositorio en el servidor (ej. `/home/felix/amigosparaelmundo`).
 2. **Base de datos**: crear BD y usuario, e importar el esquema o el dump de producción.
 3. **`config/.env`**: copiar de `.env.example` y editar con los datos reales
-   (`APP_URL=http://amigosporelmundo.org`, credenciales de BD, `APP_KEY` propia).
+   (`APP_URL=http://amigosparaelmundo.org`, credenciales de BD, `APP_KEY` propia).
 4. **vhost Nginx**: el `root` debe apuntar a `.../amigosparaelmundo/public` y PHP vía
    `fastcgi_pass` al socket del pool de PHP-FPM. El archivo se sirve con el
    front controller `index.php` (`try_files $uri /index.php?$query_string`).
@@ -89,7 +89,7 @@ Base de datos local: **`amigos_mundo`** · host `127.0.0.1:3306` · usuario `roo
 
 | Usuario                        | Contraseña   | Rol   |
 |--------------------------------|--------------|-------|
-| `admin@amigosporelmundo.org`   | `Amigos2026` | Admin |
+| `admin@amigosparaelmundo.org`   | `Amigos2026` | Admin |
 
 > 🔐 Cambiar la contraseña inmediatamente después del primer inicio de sesión.
 

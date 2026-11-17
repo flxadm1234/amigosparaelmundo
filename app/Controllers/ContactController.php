@@ -48,7 +48,7 @@ class ContactController extends Controller
         );
 
         // Opcional: enviar correo (si php mail está habilitado)
-        $to = app_setting('contact_emails', 'contacto@amigosporelmundo.org');
+        $to = app_setting('contact_emails', 'contacto@amigosparaelmundo.org');
         if ($to !== '' && function_exists('mail')) {
             $to = explode('|', $to)[0] ?? $to;
             $subject = '[AMIGOS POR EL MUNDO] Contacto Web: ' . $data['subject'];

@@ -531,7 +531,7 @@ if (!empty($errors) && is_array($errors)): ?>
               <label class="form-label">📘 Facebook</label>
               <input type="url" name="social_facebook" class="form-control"
                      value="<?= e($get('social_facebook', '')) ?>"
-                     placeholder="https://facebook.com/amigosporelmundo">
+                     placeholder="https://facebook.com/amigosparaelmundo">
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -539,7 +539,7 @@ if (!empty($errors) && is_array($errors)): ?>
               <label class="form-label">🐦 Twitter / X</label>
               <input type="url" name="social_twitter" class="form-control"
                      value="<?= e($get('social_twitter', '')) ?>"
-                     placeholder="https://twitter.com/amigosporelmundo">
+                     placeholder="https://twitter.com/amigosparaelmundo">
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -547,7 +547,7 @@ if (!empty($errors) && is_array($errors)): ?>
               <label class="form-label">📸 Instagram</label>
               <input type="url" name="social_instagram" class="form-control"
                      value="<?= e($get('social_instagram', '')) ?>"
-                     placeholder="https://instagram.com/amigosporelmundo">
+                     placeholder="https://instagram.com/amigosparaelmundo">
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -555,7 +555,7 @@ if (!empty($errors) && is_array($errors)): ?>
               <label class="form-label">▶️ YouTube</label>
               <input type="url" name="social_youtube" class="form-control"
                      value="<?= e($get('social_youtube', '')) ?>"
-                     placeholder="https://youtube.com/@amigosporelmundo">
+                     placeholder="https://youtube.com/@amigosparaelmundo">
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -563,7 +563,7 @@ if (!empty($errors) && is_array($errors)): ?>
               <label class="form-label">🎵 TikTok</label>
               <input type="url" name="social_tiktok" class="form-control"
                      value="<?= e($get('social_tiktok', '')) ?>"
-                     placeholder="https://tiktok.com/@amigosporelmundo">
+                     placeholder="https://tiktok.com/@amigosparaelmundo">
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -654,7 +654,7 @@ if (!empty($errors) && is_array($errors)): ?>
               <label class="form-label">✉️ Email (footer_email)</label>
               <input type="email" name="footer_email" class="form-control"
                      value="<?= e($get('footer_email', '')) ?>"
-                     placeholder="contacto@amigosporelmundo.org">
+                     placeholder="contacto@amigosparaelmundo.org">
             </div>
           </div>
           <div class="col-md-6 col-12">

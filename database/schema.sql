@@ -384,9 +384,9 @@ INSERT INTO `roles` (`id`, `name`, `slug`, `description`) VALUES
 (2, 'Editor',        'editor', 'Gestión de contenido: noticias, flyers, multimedia');
 
 -- ----- USUARIOS -----
--- Administrador: admin@amigosporelmundo.org / Amigos2026
+-- Administrador: admin@amigosparaelmundo.org / Amigos2026
 INSERT INTO `users` (`id`, `name`, `email`, `password_hash`, `role_id`, `status`) VALUES
-(1, 'Administrador', 'admin@amigosporelmundo.org', '$2y$10$pv36cs5neU4pRrLlnqAa/.SASEUlBIbtqJ8FAfeztzdwqtVDotW4.', 1, 1);
+(1, 'Administrador', 'admin@amigosparaelmundo.org', '$2y$10$pv36cs5neU4pRrLlnqAa/.SASEUlBIbtqJ8FAfeztzdwqtVDotW4.', 1, 1);
 
 -- ----- SECCIONES PRINCIPALES (menú tipo RPP) -----
 INSERT INTO `sections` (`id`, `name`, `slug`, `section_type`, `icon`, `is_featured`, `sort_order`, `is_active`) VALUES

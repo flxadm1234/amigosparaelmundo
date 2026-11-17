@@ -80,7 +80,7 @@
             <div class="card-body">
               <h3 class="card-title-sm mb-2">💼 Cotiza tu estudio</h3>
               <p class="mb-3">Cuéntanos sobre tu necesidad: sondeo, censo, evaluación de políticas, focus group, mercado.</p>
-              <a class="btn btn-light btn-block btn-icon-left" href="mailto:<?= e($emailArr[0] ?? 'contacto@amigosporelmundo.org') ?>">
+              <a class="btn btn-light btn-block btn-icon-left" href="mailto:<?= e($emailArr[0] ?? 'contacto@amigosparaelmundo.org') ?>">
                 <span>✉️</span><span>Escríbenos ahora</span>
               </a>
             </div>

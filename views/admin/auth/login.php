@@ -231,7 +231,7 @@ $cssAdmin = asset('css/admin.css') . _imm_cacheBust('/assets/css/admin.css');
     var e = document.getElementById('f_email');
     var p = document.getElementById('f_password');
     if (e && p && e.value === '' && p.value === '' && location.search.indexOf('demo=1') !== -1) {
-      e.value = 'admin@amigosporelmundo.org';
+      e.value = 'admin@amigosparaelmundo.org';
       p.value = 'admin123';
     }
   } catch(e) {}

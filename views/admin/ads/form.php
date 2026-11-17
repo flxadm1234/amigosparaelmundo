@@ -95,7 +95,7 @@
               <label class="form-label">URL destino (link al hacer click)</label>
               <input type="text" name="link_url" class="form-control" maxlength="500"
                      value="<?= e($valFn('link_url')) ?>"
-                     placeholder="https://amigosporelmundo.org/contacto">
+                     placeholder="https://amigosparaelmundo.org/contacto">
             </div>
             <div class="col-md-6 col-12">
               <label class="form-label">Texto alternativo (accesibilidad/SEO)</label>

@@ -44,7 +44,7 @@
           <label class="form-label">Email *</label>
           <input type="email" name="email" required maxlength="180"
                  class="form-control" value="<?= e($valFn('email')) ?>"
-                 placeholder="usuario@amigosporelmundo.org" autocomplete="email">
+                 placeholder="usuario@amigosparaelmundo.org" autocomplete="email">
         </div>
         <div class="mb-3">
           <label class="form-label">Rol *</label>
