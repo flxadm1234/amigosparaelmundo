@@ -1,0 +1,35 @@
+# ================================
+# Entorno / credenciales
+# ================================
+config/.env
+
+# ================================
+# Herramientas locales y temporales
+# ================================
+.tools/
+.tmp/
+.tmp_*
+/storage/deploy_tmp/
+/storage/sessions/
+/storage/*.zip
+/smoke_*.php
+/debug-*.md
+/.trae/
+/ssh/
+
+# ================================
+# Logs y basura del sistema
+# ================================
+*.log
+*.pid
+*.err
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+
+# ================================
+# Sesiones
+# ================================
+AMIGOSSESS_*
+sess_*

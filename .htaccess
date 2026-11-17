@@ -1,0 +1,42 @@
+# =================================================
+# AMIGOS POR EL MUNDO - .htaccess raiz
+# Redirige TODO el trafico a /public/ + HARDENING
+# =================================================
+
+Options -MultiViews -Indexes
+RewriteEngine On
+RewriteBase /
+
+# --- Headers de seguridad ---
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), interest-cohort=()"
+    Header always set X-XSS-Protection "1; mode=block"
+    <If "%{REQUEST_SCHEME} == 'https'">
+        Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    </If>
+</IfModule>
+
+# --- Bloquear acceso DIRECTO a carpetas sensibles ---
+<IfModule mod_authz_core.c>
+    <DirectoryMatch "^/(app|config|storage|views|database|\.tools|\.git)/">
+        Require all denied
+    </DirectoryMatch>
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteRule ^(app|config|storage|views|database|\.tools|\.git)(/.*)?$ - [R=403,L]
+    RewriteRule ^(composer|package|\.env|\.git)(\.|$) - [R=403,L]
+</IfModule>
+
+# --- Alias /uploads a public/uploads (para URL /uploads/*) ---
+RewriteRule ^uploads/(.*)$ public/uploads/$1 [L]
+
+# --- Si la URL ya empieza por /public/ no tocar ---
+RewriteRule ^public/ - [L]
+
+# --- Todo lo demas se envia a public/index.php (Front Controller) ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [QSA,L]

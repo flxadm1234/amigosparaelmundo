@@ -1,0 +1,23 @@
+# ========== Seguridad: carpeta uploads ==========
+# Permitir acceso a archivos estáticos pero NO ejecutar PHP/scripts
+Options -Indexes -ExecCGI -MultiViews
+
+<FilesMatch "\.(php\d?|phtml|pl|py|cgi|sh|jsp|asp|aspx)$">
+    Require all denied
+</FilesMatch>
+
+# Tipos MIME permitidos
+<IfModule mod_mime.c>
+    RemoveType .php .php3 .php4 .php5 .php7 .phar .phtml .pl .py .cgi .sh .jsp .asp .aspx
+</IfModule>
+
+# Cache de archivos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png  "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType application/vnd.ms-excel "access plus 1 month"
+    ExpiresByType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet "access plus 1 month"
+</IfModule>

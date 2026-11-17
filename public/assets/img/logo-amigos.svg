@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" role="img" aria-label="AMIGOS POR EL MUNDO">
+  <defs>
+    <linearGradient id="amigosLogoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#087B43"/>
+      <stop offset="100%" stop-color="#85C440"/>
+    </linearGradient>
+    <clipPath id="amigosLogoClip"><rect width="300" height="72" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#amigosLogoClip)">
+    <!-- Isotipo: globo terráqueo + punto de unión -->
+    <g transform="translate(6, 7)">
+      <rect x="0" y="0" width="58" height="58" rx="16" fill="url(#amigosLogoGrad)"/>
+      <circle cx="29" cy="29" r="16" fill="none" stroke="#ffffff" stroke-width="2.4"/>
+      <ellipse cx="29" cy="29" rx="7" ry="16" fill="none" stroke="#ffffff" stroke-width="2.4"/>
+      <line x1="13" y1="29" x2="45" y2="29" stroke="#ffffff" stroke-width="2.4"/>
+      <circle cx="45" cy="13" r="5.5" fill="#F3BF24"/>
+    </g>
+    <!-- Logotipo -->
+    <g font-family="'Inter', 'Segoe UI', Roboto, Arial, sans-serif">
+      <text x="76" y="31" font-size="19" font-weight="800" letter-spacing=".3" fill="#087B43">
+        AMIGOS
+      </text>
+      <text x="76" y="50" font-size="11" font-weight="700" letter-spacing="1.7" fill="#85C440">
+        POR EL MUNDO
+      </text>
+    </g>
+  </g>
+</svg>

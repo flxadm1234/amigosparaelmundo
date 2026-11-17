@@ -1,0 +1,4 @@
+# ========== Seguridad: storage NO es público ==========
+# Bloquear TODO acceso desde la web a esta carpeta
+Require all denied
+Options -Indexes
