@@ -388,6 +388,20 @@ INSERT INTO `roles` (`id`, `name`, `slug`, `description`) VALUES
 INSERT INTO `users` (`id`, `name`, `email`, `password_hash`, `role_id`, `status`) VALUES
 (1, 'Administrador', 'admin@amigosparaelmundo.org', '$2y$10$pv36cs5neU4pRrLlnqAa/.SASEUlBIbtqJ8FAfeztzdwqtVDotW4.', 1, 1);
 
+-- ----- PÁGINAS INSTITUCIONALES -----
+-- Requeridas por los enlaces del footer y del formulario de contacto.
+INSERT INTO `pages` (`id`, `slug`, `title`, `content_html`, `meta_title`, `meta_desc`, `is_published`, `layout`, `created_by`, `updated_by`) VALUES
+(1, 'contacto', 'Contáctanos',
+ '<h2>Nuestra oficina</h2><p>Atendemos de lunes a viernes. Respondemos las consultas recibidas en menos de 24 horas hábiles.</p><p>Si deseas sumarte como voluntario, aliado o donante, escríbenos mediante el formulario y te contactaremos a la brevedad.</p>',
+ 'Contáctanos | Asociación Civil Amigos para el Mundo',
+ 'Contáctanos para consultas, colaboración o información sobre nuestros programas sociales y ambientales.',
+ 1, 'contact', 1, 1),
+(2, 'politica-privacidad', 'Política de Privacidad',
+ '<h2>Política de Privacidad</h2><p>La Asociación Civil Amigos para el Mundo respeta y protege los datos personales que nos proporcionas a través de este sitio web, en cumplimiento de la Ley N° 29733, Ley de Protección de Datos Personales, y su reglamento.</p><h3>1. Datos que recopilamos</h3><p>Recopilamos únicamente los datos que nos entregas de forma voluntaria mediante el formulario de contacto: nombre, correo electrónico, teléfono y el contenido de tu mensaje.</p><h3>2. Finalidad del tratamiento</h3><p>Utilizamos tus datos para atender consultas, coordinar iniciativas de colaboración y enviarte información relacionada con nuestros programas sociales y ambientales. No compartimos tu información con terceros sin tu consentimiento.</p><h3>3. Conservación y seguridad</h3><p>Conservamos tus datos solo el tiempo necesario para cumplir la finalidad descrita y aplicamos medidas razonables de seguridad para evitar su pérdida o uso indebido.</p><h3>4. Tus derechos</h3><p>Puedes solicitar el acceso, la rectificación, la cancelación u oposición al tratamiento de tus datos escribiendo a nuestro correo de contacto. Atenderemos tu solicitud dentro de los plazos establecidos por ley.</p><h3>5. Contacto</h3><p>Para cualquier consulta sobre esta política, escríbenos a través de la sección de contacto del sitio.</p>',
+ 'Política de Privacidad | Asociación Civil Amigos para el Mundo',
+ 'Conoce cómo tratamos tus datos personales conforme a la Ley N° 29733.',
+ 1, 'default', 1, 1);
+
 -- ----- SECCIONES PRINCIPALES (menú tipo RPP) -----
 INSERT INTO `sections` (`id`, `name`, `slug`, `section_type`, `icon`, `is_featured`, `sort_order`, `is_active`) VALUES
 (1,  'Últimas noticias', 'ultimas-noticias',   'news',  '📰', 1, 1, 1),
